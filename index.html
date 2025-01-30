@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyricsy Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">🎶 Lyricsy Music</div>
+        <button id="toggle-mode">🌙 Dark ...</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Lyricsy Music<br>Feel the Music</h1>
+        <p>Discover lyrics and sing along with your favorite songs.</p>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search for a song...">
+            <button onclick="searchLyrics()">🔍</button>
+        </div>
+    </section>
+
+    <!-- Featured Songs -->
+    <section class="featured">
+        <h2>🎤 Featured Songs</h2>
+        <div id="lyrics-list"></div>
+    </section>
+
+    <!-- Lyrics Display -->
+    <div id="lyrics-display" class="hidden">
+        <div class="lyrics-container">
+            <h2 id="song-title"></h2>
+            <p id="song-artist"></p>
+            <pre id="song-lyrics"></pre>
+            <a id="youtube-link" target="_blank">🎬 Watch on YouTube</a>
+            <button onclick="closeLyrics()">⬅ Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
